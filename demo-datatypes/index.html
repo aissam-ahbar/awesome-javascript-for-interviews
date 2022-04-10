@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- ACE Code editor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ext-beautify.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Our library -->
+    <script src="./script/script.js"></script>
+</head>
+
+<body>
+    <h2 id="title">Javascript Coding Games - Play with Datatypes</h2>
+
+    <div id="demo">
+        
+        <ul><li>Javascript Online Editor for Practise 
+            <button type="button" onclick="showEditor('editor')" id="editor_btn" style="cursor:pointer;">Hide JS Editor</button>
+        </li></ul>
+
+            <div id="editor">            
+    // Sample code goes here !!!
+    console.log("Play with Javascript here !!!");
+            </div>
+            <script>
+                var beautify = ace.require("ace/ext/beautify"); // get reference to extension
+                var editor = ace.edit("editor");
+                editor.setTheme("ace/theme/monokai");
+                editor.session.setMode("ace/mode/javascript");
+            </script>
+
+        <!-- No type -->
+        <ul><li>[Interview question with undefined] Create a variable without assignment and display type</li></ul>
+    
+        <div class="exercise">
+            <button type="button" onclick="showSolution('solutionUndefined')" class="try" id="try_solutionUndefined">Try it</button>
+
+            <b> (i) Sample code</b> <br><br>
+            var variableName; <br>
+            console.log(typeof(variableName)); <br>
+        </div>
+
+            
+        <div id="solutionUndefined" class="solution">
+            <b> (i) Solution</b><br>
+            var name = "sam"; <br>
+            console.log(name); <br>
+            console.log(typeof(name)); <br><br>
+            <b>Result</b> <br>
+            >> sam<br>
+            >> 'string'
+        </div>
+
+        <!-- String -->
+        <ul><li>[Play with String] Create a String named "sam", display its value and type</li></ul>
+    
+        <div class="exercise">
+            <button type="button" onclick="showSolution('solutionString')" class="try" id="try_solutionString">Try it</button>
+            <b> (i) Sample Code</b> <br><br>
+            var variableName = value; <br>
+            console.log(variableName); <br>
+            console.log(typeof(variableName)); <br>
+        </div>
+    
+        <div id="solutionString" class="solution">
+            <b> (i) Solution</b><br>
+            var name = "sam"; <br>
+            console.log(name); <br>
+            console.log(typeof(name)); <br><br>
+            <b>Result</b> <br>
+            >> sam<br>
+            >> 'string'
+        </div>
+
+        <!-- Number -->
+        <ul><li>[Play with number] Create a number containing my age (33 years old), display its value and type</li></ul>
+
+        <div class="exercise">
+            <button type="button" onclick="showSolution('solutionNumber')" class="try" id="try_solutionNumber">Try it</button>
+            <b> (i) Sample Code</b> <br><br>
+            var variableName = value; <br>
+            console.log(variableName); <br>
+            console.log(typeof(variableName)); <br>
+        </div>
+    
+        <div id="solutionNumber" class="solution">
+            <b> (i) Solution</b><br>
+            var age = 33; <br>
+            console.log(age); <br>
+            console.log(typeof(age)); <br><br>
+            <b>Result</b> <br>
+            >> 33<br>
+            >> 'number'
+        </div>
+
+        <!-- boolean -->
+        <ul><li>[Play with boolean] Create a boolean telling if you love chocolate, display its value and type</li></ul>
+
+        <div class="exercise">
+            <button type="button" onclick="showSolution('solutionBoolean')" class="try" id="try_solutionBoolean">Try it</button>
+            <b> (i) Sample Code</b> <br><br>
+            var variableName = value; <br>
+            console.log(variableName); <br>
+            console.log(typeof(variableName)); <br>
+        </div>
+    
+        <div id="solutionBoolean" class="solution">
+            <b> (i) Solution</b><br>
+            var isChocolateAddict = true; <br>
+            console.log(isChocolateAddict); <br>
+            console.log(typeof(isChocolateAddict)); <br><br>
+            <b>Result</b> <br>
+            >> true<br>
+            >> 'boolean'
+        </div>
+
+        <!-- array -->
+        <ul><li>[Play with array] Create an array of fruits, display values and type</li></ul>
+
+        <div class="exercise">
+            <button type="button" onclick="showSolution('solutionArray')" class="try" id="try_solutionArray">Try it</button>
+            <b> (i) Sample Code</b> <br><br>
+            var variableName = value; <br>
+            console.log(variableName); <br>
+            console.log(typeof(variableName)); <br>
+        </div>
+    
+        <div id="solutionArray" class="solution">
+            <b> (i) Solution</b><br>
+            var fruits = ["banana", "orange", "apple"]; <br>
+            console.log(fruits); <br>
+            console.log(typeof(fruits)); <br><br>
+            <b>Result</b> <br>
+            >> ["banana", "orange", "apple"] <br>
+            >> 'object'
+        </div>
+
+        <!-- NaN -->
+        <ul><li>[Play with not a number "NaN"] Create a number and multiply it by a string, display its value and type</li></ul>
+
+        <div class="exercise">
+            <button type="button" onclick="showSolution('solutionNan')" class="try" id="try_solutionNan">Try it</button>
+            <b> (i) Sample Code</b> <br><br>
+            var variableNameNumber = value; <br>
+            var variableNameString = value; <br>
+            var result = variableNameNumber * variableNameString; <br>
+            console.log(result); <br>
+            console.log(typeof(result)); <br>
+        </div>
+    
+        <div id="solutionNan" class="solution">
+            <b> (i) Solution</b><br>
+            var age = 10; <br>
+            var name = "hello"; <br>
+            var result = age * name; <br>
+            console.log(result); <br>
+            console.log(typeof(result)); <br><br>
+            <b>Result</b> <br>
+            >> NaN<br>
+            >> 'number'
+        </div>
+
+        <!-- Object -->
+        <ul><li>[Play with object] Create 2 objects, one is an empty object, the other is a President object with a name, display values and types</li></ul>
+
+        <div class="exercise">
+            <button type="button" onclick="showSolution('solutionObject')" class="try" id="try_solutionObject">Try it</button>
+            <b> (i) Sample Code</b> <br><br>
+            var objectName1 = value1; <br>
+            var objectName2 = value2; <br>
+            console.log(objectName1); <br>
+            console.log(typeof(objectName1)); <br>
+            console.log(objectName2); <br>
+            console.log(typeof(objectName2)); <br>
+        </div>
+    
+        <div id="solutionObject" class="solution">
+            <b> (i) Solution</b><br>
+            var emptyObject = {}; <br>
+            var president = { <br>
+                "name": "angela" <br>
+            } <br>
+            console.log(emptyObject); <br>
+            console.log(typeof(emptyObject)); <br><br>
+            console.log(president); <br>
+            console.log(typeof(president)); <br><br>
+            <b>Result</b> <br>
+            >> {}<br>
+            >> {name: 'angela'}<br><br>
+            >> 'object' <br>
+            >> 'object'
+        </div>
+
+    </div>
+
+</body>
+</html>

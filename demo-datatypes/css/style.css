@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: "Arial", serif;
+    font-size: 16px;
+}
+
+#demo {
+    margin-top: 64px;
+}
+
+#title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    margin-top: 0px;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    line-height: 30px;
+    color: #fff;
+    background: #7451ec;
+    font-size: 22px;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.try {
+    float: right;
+    top: 0;
+    position: relative;
+    right: 0;
+    cursor: pointer;
+}
+
+.solution {
+    margin-top: 5px;
+    display: none;
+    background-color: #388E3C;
+    color: #F8F8F2;
+    width: 555px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+.exercise {
+    background-color: #272822;
+    color: #F8F8F2;
+    width: 555px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+.parenteditor {
+    background-color: #272822;
+    color: #F8F8F2;
+    width: 555px;
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin-left: 40px;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+#editor { 
+    margin-top: 10px;
+    position: relative;
+    height: 100px;
+    width: 555px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 40px;
+}
